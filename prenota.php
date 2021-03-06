@@ -14,9 +14,9 @@ $pass = '';
 $dsn = 'mysql:host=' . $host . ';dbname=' . $db;
 
 $pdo = new PDO($dsn, $user, $pass);
-//Variabili al momento costanti poi verranno prese tramite POST
-$codice_fiscale = 'BCUERUJEKJSBKBC';
-$giorno = '2021-03-06';
+//Variabili valorizzate tramite POST
+$codice_fiscale = $_POST['codice'];
+$giorno = $_POST['giorno'];
 
 //Query di inserimento preparate
 $sql = "INSERT INTO prenotazioni VALUES(null, :codice_fiscale, :giorno)";
