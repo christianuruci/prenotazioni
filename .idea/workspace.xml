@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="760d3671-a49a-49d5-a826-8e5fa3cdf0b5" name="Default Changelist" comment="Add configuration about errors">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="760d3671-a49a-49d5-a826-8e5fa3cdf0b5" name="Default Changelist" comment="Add deployment configuration file">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lista_prenotazioni.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prenotazioni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prenotazioni.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prenota.php" beforeDir="false" afterPath="$PROJECT_DIR$/prenota.php" afterDir="false" />
     </list>
@@ -13,6 +15,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -32,7 +42,32 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:80/prenotazioni/prenota.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="codice=dhjb4j4ui3984&amp;giorno=2021-01-01" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.prenota.php">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="prenota.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/prenota.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -44,6 +79,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHP Script.prenota.php" />
+        <item itemvalue="HTTP Request.rest-api#1" />
       </list>
     </recent_temporary>
   </component>
@@ -57,7 +93,8 @@
       <updated>1615021610813</updated>
       <workItem from="1615021612329" duration="778000" />
       <workItem from="1615023167627" duration="75000" />
-      <workItem from="1615023277381" duration="5099000" />
+      <workItem from="1615023277381" duration="6786000" />
+      <workItem from="1615284156250" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1615024101775</created>
@@ -80,7 +117,49 @@
       <option name="project" value="LOCAL" />
       <updated>1615027807813</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add PHPStorm configuration file about SQL data spurce and dialect">
+      <created>1615029989477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615029989477</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add SQL insertion example">
+      <created>1615030023493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615030023493</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add POST variables">
+      <created>1615031536255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615031536255</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add webserver configuration file">
+      <created>1615031577382</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615031577382</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add deployment configuration file">
+      <created>1615031600515</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615031600515</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add frontend HTML file for prenota.php">
+      <created>1615289246344</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615289246345</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,11 +175,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Add a configuration line" />
     <MESSAGE value="Add configuration about errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add configuration about errors" />
+    <MESSAGE value="Add PHPStorm configuration file about SQL data spurce and dialect" />
+    <MESSAGE value="Add SQL insertion example" />
+    <MESSAGE value="Add POST variables" />
+    <MESSAGE value="Add webserver configuration file" />
+    <MESSAGE value="Add deployment configuration file" />
+    <MESSAGE value="Add frontend HTML file for prenota.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add frontend HTML file for prenota.php" />
   </component>
 </project>
