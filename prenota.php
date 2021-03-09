@@ -31,3 +31,6 @@ $stmt -> execute(
     'giorno' => $giorno
     ]
 );
+//Ridirige il browser verso la pagina indicata nella Location
+header('Location:lista_prenotazioni.php');
+exit(0);
