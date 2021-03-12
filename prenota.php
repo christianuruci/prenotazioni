@@ -32,5 +32,6 @@ $stmt -> execute(
     ]
 );
 //Ridirige il browser verso la pagina indicata nella Location
-header('Location:lista_prenotazioni.php');
+header('Location:tabella.php');
 exit(0);
+
