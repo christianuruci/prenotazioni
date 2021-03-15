@@ -1,28 +1,36 @@
 <?php
 
-//Dice a livello dello script che gli errori verranno mostrati
-//e che non verranno loggati
-ini_set("display_errors", 1);
-ini_set("log_errors", 0);
+include_once("config.php");
 
-$host = 'localhost';
-$db = 'esercizioVaccino';
-$user = 'root';
-$pass = '';
-
-//Stringa di connessione
-$dsn = 'mysql:host=' . $host . ';dbname=' . $db;
-
-$pdo = new PDO($dsn, $user, $pass);
-
-
-//Query di inserimento preparate
-$sql = "SELECT * FROM prenotazioni";
-
+$sql = "SELECT codice_fiscale, giorno FROM prenotazioni";
 $stmt = $pdo->query($sql);
 
-$result = $stmt->fetchAll();
-
-echo "<pre>";
-var_dump($result);
-echo "</pre>";
+$valori = ' ';
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+    $valori.= "<tr><td>" . $row['codice_fiscale'] . "</td><td>" . $row['giorno'] . "</td></tr>";
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Prenotazioni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+<h1 align="center"> Lista delle prenotazioni</h1>
+<table class="table table-success table-striped">
+    <thead>
+    <tr align="center">
+        <th scope="co_fiscale"><u>Codice Fiscale</u></th>
+        <th scope="giorno"><u>Giorno</u></th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php
+    echo $valori;
+    ?>
+    </tbody>
+</table>
+</body>
+</html>
