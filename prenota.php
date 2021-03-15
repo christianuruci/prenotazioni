@@ -1,19 +1,7 @@
 <?php
 
-//Dice a livello dello script che gli errori verranno mostrati
-//e che non verranno loggati
-ini_set("display_errors", 1);
-ini_set("log_errors", 0);
+include_once("config.php");
 
-$host = 'localhost';
-$db = 'esercizioVaccino';
-$user = 'root';
-$pass = '';
-
-//Stringa di connessione
-$dsn = 'mysql:host=' . $host . ';dbname=' . $db;
-
-$pdo = new PDO($dsn, $user, $pass);
 //Variabili valorizzate tramite POST
 $codice_fiscale = $_POST['codice'];
 $giorno = $_POST['giorno'];
@@ -32,6 +20,6 @@ $stmt -> execute(
     ]
 );
 //Ridirige il browser verso la pagina indicata nella Location
-header('Location:tabella.php');
+header('Location:lista_prenotazioni.php');
 exit(0);
 
