@@ -2,14 +2,12 @@
 
 include_once("config.php");
 
-$sql = "SELECT codice_fiscale, giorno FROM prenotazioni";
+$sql = "SELECT codice_fiscale, giorno, codice_prenotazione FROM prenotazioni";
 $stmt = $pdo->query($sql);
 
 $valori = ' ';
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-    $codice_random = bin2hex(openssl_random_pseudo_bytes(6));
-    //$codice_univoco = uniqid().$codice_random;
-    $valori.= "<tr><td>" . $row['codice_fiscale'] . "</td><td>" . $row['giorno'] . "</td><td>" . $codice_random . "</td></tr>";
+    $valori.= "<tr><td>" . $row['codice_fiscale'] . "</td><td>" . $row['giorno'] . "</td><td>" . $row['codice_prenotazione'] . "</td></tr>";
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +19,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 </head>
 <body>
 <h1 align="center"> Lista delle prenotazioni</h1>
-<table class="table table-success table-striped">
+<table class="table table-success table-striped" align="center">
     <thead>
     <tr align="center">
         <th scope="co_fiscale"><u>Codice Fiscale</u></th>
