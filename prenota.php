@@ -19,6 +19,6 @@ $stmt -> execute(
     ]
 );
 //Ridirige il browser verso la pagina indicata nella Location
-header('Location:tabella.php');
+header('Location:lista_prenotazioni.php');
 exit(0);
 

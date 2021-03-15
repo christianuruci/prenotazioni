@@ -7,7 +7,9 @@ $stmt = $pdo->query($sql);
 
 $valori = ' ';
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-    $valori.= "<tr><td>" . $row['codice_fiscale'] . "</td><td>" . $row['giorno'] . "</td></tr>";
+    $codice_random = bin2hex(openssl_random_pseudo_bytes(6));
+    //$codice_univoco = uniqid().$codice_random;
+    $valori.= "<tr><td>" . $row['codice_fiscale'] . "</td><td>" . $row['giorno'] . "</td><td>" . $codice_random . "</td></tr>";
 }
 ?>
 <!DOCTYPE html>
@@ -24,6 +26,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     <tr align="center">
         <th scope="co_fiscale"><u>Codice Fiscale</u></th>
         <th scope="giorno"><u>Giorno</u></th>
+        <th scope="codice_prenotazione"><u>Codice Prenotazione</u></th>
     </tr>
     </thead>
     <tbody>
