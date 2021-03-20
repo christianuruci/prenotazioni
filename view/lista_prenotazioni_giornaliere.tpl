@@ -13,7 +13,6 @@
         <thead>
         <tr>
             <th>Codice fiscale</th>
-            <th>Data</th>
             <th>Codice univoco</th>
         </tr>
         </thead>
@@ -21,7 +20,6 @@
         <?php foreach($result as $row): ?>
         <tr>
             <td><?php echo $row['codice_fiscale'] ?></td>
-            <td><?php echo $row['giorno'] ?></td>
             <td><?php echo $row['codice_prenotazione'] ?></td>
         </tr>
         <?php endforeach ?>

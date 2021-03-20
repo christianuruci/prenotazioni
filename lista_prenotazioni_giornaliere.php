@@ -7,7 +7,7 @@ use League\Plates\Engine;
 //Viene creato l'oggetto per la gestione dei template
 $templates = new Engine('./view', 'tpl');
 
-$sql = "SELECT * FROM prenotazioni WHERE giorno = CURRENT_DATE";
+$sql = "SELECT codice_fiscale, codice_prenotazione FROM prenotazioni WHERE giorno = CURRENT_DATE ORDER BY codice_fiscale";
 
 $stmt = $pdo->query($sql);
 
