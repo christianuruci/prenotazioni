@@ -6,26 +6,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
 </head>
 <body>
-<h1>Portale prenotazioni</h1>
+    <h1>Portale prenotazioni</h1>
 
-<table class="striped">
-    <caption> Lista delle Prenotazioni correnti</caption>
-    <thead>
-    <tr>
-        <th>Giorno prenotazione:</th>
+    <table class="striped">
 
-        <th>Numero delle prenotazioni:</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php foreach($result as $row): ?>
-    <tr>
-        <td><?php echo $row['giorno'] ?></td>
+        <h4>
+            Lista delle Prenotazioni che vanno da <?=$data_inizio?> a <?=$data_fine?>
+        </h4>
+        <thead>
+            <tr>
+                <th>Giorno prenotazione:</th>
 
-        <td><?php echo $row['numero_prenotazioni'] ?></td>
-    </tr>
-    <?php endforeach ?>
-    </tbody>
-</table>
+                <th>Numero delle prenotazioni:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($result as $row): ?>
+                <tr>
+                    <td><?php echo $row['giorno'] ?></td>
+                    <td><?php echo $row['numero_prenotazioni'] ?></td>
+                </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
 </body>
 </html>
