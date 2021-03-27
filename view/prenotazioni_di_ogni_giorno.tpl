@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Prenotazioni</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
-</head>
-<body>
-    <h1>Portale prenotazioni</h1>
+<?php $this->layout('main', ['argomento' => 'Prenotazioni di ogni giorno']); ?>
 
-    <table class="striped">
+<table class="striped">
 
         <h4>
             Lista delle Prenotazioni che vanno da <?=$data_inizio?> a <?=$data_fine?>
@@ -29,5 +21,3 @@
             <?php endforeach ?>
         </tbody>
     </table>
-</body>
-</html>

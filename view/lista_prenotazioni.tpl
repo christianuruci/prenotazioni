@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Prenotazioni</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
-</head>
-<body>
-    <h1> Portale prenotazioni</h1>
-    <h2>Lista delle prenotazioni</h2>
+<?php $this->layout('main', ['argomento' => 'Lista delle prenotazioni']); ?>
+
     <table class="striped">
         <caption>Prenotazioni</caption>
         <thead>
@@ -18,14 +10,12 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($result as $row): ?>
-        <tr>
-            <td><?php echo $row['codice_fiscale'] ?></td>
-            <td><?php echo $row['giorno'] ?></td>
-            <td><?php echo $row['codice_prenotazione'] ?></td>
-        </tr>
-        <?php endforeach ?>
+            <?php foreach($result as $row): ?>
+                <tr>
+                    <td><?php echo $row['codice_fiscale'] ?></td>
+                    <td><?php echo $row['giorno'] ?></td>
+                    <td><?php echo $row['codice_prenotazione'] ?></td>
+                </tr>
+            <?php endforeach ?>
         </tbody>
     </table>
-</body>
-</html>
