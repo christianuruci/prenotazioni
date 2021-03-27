@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="760d3671-a49a-49d5-a826-8e5fa3cdf0b5" name="Default Changelist" comment="Add deployment configuration file">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lista_prenotazioni.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prenotazioni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prenotazioni.iml" afterDir="false" />
+    <list default="true" id="760d3671-a49a-49d5-a826-8e5fa3cdf0b5" name="Default Changelist" comment="Add tabella.php">
+      <change afterPath="$PROJECT_DIR$/codiceQR.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/esegui.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/esegui_tampone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/esegui.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prenota.php" beforeDir="false" afterPath="$PROJECT_DIR$/prenota.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="refactoring" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1pNRYkoVhfzIwSoEzCp7PMLFDRZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,9 +48,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/view" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -64,8 +84,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.prenota.php">
+  <component name="RunManager" selected="PHP Script.codiceQR.php">
     <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="tabella.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost/prenotazioni/tabella.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="codiceQR.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/codiceQR.php">
       <method v="2" />
     </configuration>
     <configuration name="prenota.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/prenota.php">
@@ -76,9 +102,15 @@
       </CommandLine>
       <method v="2" />
     </configuration>
+    <configuration name="tabella_dati.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tabella_dati.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.codiceQR.php" />
+        <item itemvalue="PHP Script.tabella_dati.php" />
         <item itemvalue="PHP Script.prenota.php" />
+        <item itemvalue="JavaScript Debug.tabella.php" />
         <item itemvalue="HTTP Request.rest-api#1" />
       </list>
     </recent_temporary>
@@ -94,7 +126,17 @@
       <workItem from="1615021612329" duration="778000" />
       <workItem from="1615023167627" duration="75000" />
       <workItem from="1615023277381" duration="6786000" />
-      <workItem from="1615284156250" duration="3336000" />
+      <workItem from="1615284156250" duration="3981000" />
+      <workItem from="1615556000398" duration="280000" />
+      <workItem from="1615556674748" duration="7618000" />
+      <workItem from="1615826013342" duration="7830000" />
+      <workItem from="1615921263641" duration="2510000" />
+      <workItem from="1616170940190" duration="969000" />
+      <workItem from="1616227491489" duration="7368000" />
+      <workItem from="1616493844121" duration="7301000" />
+      <workItem from="1616504618345" duration="147000" />
+      <workItem from="1616791312627" duration="1455000" />
+      <workItem from="1616832411641" duration="5829000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1615024101775</created>
@@ -159,7 +201,140 @@
       <option name="project" value="LOCAL" />
       <updated>1615289246345</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add header">
+      <created>1615290859959</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615290859960</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Extract data from prenotazioni">
+      <created>1615290992014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615290992014</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update file">
+      <created>1615291024530</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615291024530</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add table with data">
+      <created>1615565837404</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615565837405</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Refactor db configuration using an external file">
+      <created>1615830388494</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615830388494</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update master">
+      <created>1615831310661</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615831310661</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add sql schema">
+      <created>1615832501593</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1615832501593</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add a unique random code">
+      <created>1615837142847</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615837142847</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add a unique random code RIGHT VERSION">
+      <created>1615839751485</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615839751485</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add vendor folder to gitignore">
+      <created>1615922063388</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615922063388</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add table in lista_prenotazioni.tpl">
+      <created>1615929144431</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1615929144431</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add lista_prenotazioni_giornaliere">
+      <created>1616230358043</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616230358043</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add lista_prenotazioni_giornaliere new">
+      <created>1616232520802</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1616232520802</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add data_non_disponibile and mostra_codice.tpl">
+      <created>1616496053879</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616496053880</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add prenotazioni_di_ogni_giorno.php and prenotazioni_di_ogni_giorno.tpl">
+      <created>1616498529235</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616498529237</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add prenotazioni_di_ogni_giorno.php and prenotazioni_di_ogni_giorno.tpl with the date range">
+      <created>1616503783791</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1616503783791</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add tabella.php">
+      <created>1616504265212</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1616504265212</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Template refactoring">
+      <created>1616835243776</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616835243776</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add eseguito, note to DB">
+      <created>1616840700893</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1616840700893</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,15 +353,35 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
-    <MESSAGE value="Add a configuration line" />
-    <MESSAGE value="Add configuration about errors" />
     <MESSAGE value="Add PHPStorm configuration file about SQL data spurce and dialect" />
     <MESSAGE value="Add SQL insertion example" />
     <MESSAGE value="Add POST variables" />
     <MESSAGE value="Add webserver configuration file" />
     <MESSAGE value="Add deployment configuration file" />
     <MESSAGE value="Add frontend HTML file for prenota.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add frontend HTML file for prenota.php" />
+    <MESSAGE value="Add header" />
+    <MESSAGE value="Extract data from prenotazioni" />
+    <MESSAGE value="Update file" />
+    <MESSAGE value="Add table with data" />
+    <MESSAGE value="Refactor db configuration using an external file" />
+    <MESSAGE value="Update master" />
+    <MESSAGE value="Add sql schema" />
+    <MESSAGE value="Add a unique random code" />
+    <MESSAGE value="Add a unique random code RIGHT VERSION" />
+    <MESSAGE value="Add vendor folder to gitignore" />
+    <MESSAGE value="Add table in lista_prenotazioni.tpl" />
+    <MESSAGE value="Add lista_prenotazioni_giornaliere" />
+    <MESSAGE value="Add lista_prenotazioni_giornaliere new" />
+    <MESSAGE value="Add data_non_disponibile and mostra_codice.tpl" />
+    <MESSAGE value="Add prenotazioni_di_ogni_giorno.php and prenotazioni_di_ogni_giorno.tpl" />
+    <MESSAGE value="Add prenotazioni_di_ogni_giorno.php and prenotazioni_di_ogni_giorno.tpl with the date range" />
+    <MESSAGE value="Add tabella.php" />
+    <MESSAGE value="Template refactoring" />
+    <MESSAGE value="Add eseguito, note to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add eseguito, note to DB" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
