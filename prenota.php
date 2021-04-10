@@ -37,7 +37,7 @@ else
 {
     //Query di inserimento preparata
     $sql = "INSERT INTO prenotazioni VALUES(null, :codice_fiscale, :giorno, 
-                                :codice_prenotazione)";
+                                :codice_prenotazione,false,null)";;
 
     //Inviamo la query al database che la tiene in pancia
     $stmt = $pdo->prepare($sql);
