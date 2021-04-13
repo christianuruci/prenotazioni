@@ -29,6 +29,7 @@ $riga = $stmt->fetch();
 //lo username non è presente nel db
 if ($riga === false)
 {
+
     echo $templates->render('login_fallito', ['username' => $username]);
 }
 //lo username è presente, bisogna verificare se la password è corretta
@@ -37,6 +38,8 @@ else
     $pass_hash = $riga['password'];
     //La password è corretta
     if (password_verify($password, $pass_hash)){
+        $_SESSION['username'] = $username;
+
         echo $templates->render('utente_autenticato', ['username' => $username]);
     }
     //La password è sbagliata

@@ -1,6 +1,7 @@
 <?php $this->layout('main', ['argomento' => 'Lista delle prenotazioni']); ?>
 
-    <table class="striped">
+<h1>Ciao <?=$username?></h1>
+<table class="striped">
         <caption>Prenotazioni</caption>
         <thead>
         <tr>
@@ -18,4 +19,4 @@
                 </tr>
             <?php endforeach ?>
         </tbody>
-    </table>
+</table>
