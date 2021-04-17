@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="760d3671-a49a-49d5-a826-8e5fa3cdf0b5" name="Default Changelist" comment="Add tabella.php">
       <change afterPath="$PROJECT_DIR$/codiceQR.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esegui.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esegui_tampone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/esegui.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/logout.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/main.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/main.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -107,9 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.codiceQR.php" />
         <item itemvalue="PHP Script.tabella_dati.php" />
         <item itemvalue="PHP Script.prenota.php" />
+        <item itemvalue="PHP Script.codiceQR.php" />
         <item itemvalue="JavaScript Debug.tabella.php" />
         <item itemvalue="HTTP Request.rest-api#1" />
       </list>
@@ -137,6 +136,15 @@
       <workItem from="1616504618345" duration="147000" />
       <workItem from="1616791312627" duration="1455000" />
       <workItem from="1616832411641" duration="5829000" />
+      <workItem from="1617895134010" duration="16000" />
+      <workItem from="1617895334461" duration="672000" />
+      <workItem from="1617981229117" duration="255000" />
+      <workItem from="1617984581824" duration="1469000" />
+      <workItem from="1617997161982" duration="1175000" />
+      <workItem from="1618035940028" duration="1687000" />
+      <workItem from="1618040913468" duration="5530000" />
+      <workItem from="1618305066856" duration="3950000" />
+      <workItem from="1618643258692" duration="1420000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1615024101775</created>
@@ -334,7 +342,42 @@
       <option name="project" value="LOCAL" />
       <updated>1616840700893</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add prenota_con_giorni">
+      <created>1618036533161</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618036533162</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add registrazione">
+      <created>1618146462054</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618146462055</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add password_diverse">
+      <created>1618146627294</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1618146627294</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add login">
+      <created>1618308428799</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618308428800</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add session management">
+      <created>1618311029187</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1618311029187</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,11 +396,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add PHPStorm configuration file about SQL data spurce and dialect" />
-    <MESSAGE value="Add SQL insertion example" />
-    <MESSAGE value="Add POST variables" />
-    <MESSAGE value="Add webserver configuration file" />
-    <MESSAGE value="Add deployment configuration file" />
     <MESSAGE value="Add frontend HTML file for prenota.php" />
     <MESSAGE value="Add header" />
     <MESSAGE value="Extract data from prenotazioni" />
@@ -378,7 +416,12 @@
     <MESSAGE value="Add tabella.php" />
     <MESSAGE value="Template refactoring" />
     <MESSAGE value="Add eseguito, note to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add eseguito, note to DB" />
+    <MESSAGE value="Add prenota_con_giorni" />
+    <MESSAGE value="Add registrazione" />
+    <MESSAGE value="Add password_diverse" />
+    <MESSAGE value="Add login" />
+    <MESSAGE value="Add session management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add session management" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
